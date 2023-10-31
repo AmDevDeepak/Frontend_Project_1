@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+#lNav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#lNavR{
+    display: flex;
+    align-items: center;
+}
+
+#lNavR a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+#lNavR i{
+    color: royalblue;
+    font-size: 1.2rem;
+}
+
+.left #textCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#textCenter h1{
+    font-size: 5.625rem;
+    font-weight: 900;
+}
+
+#textCenter p{
+    opacity: 0.6;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#textCenter a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.right{
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.rTop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(40, 49, 145);
+}
+
+.rBottom{
+    width: 100%;
+    height: 50%;
+    background-image: url('orange3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.rTopLeft{
+    width: 55%;
+    height: 100%;
+    background-image: url('orange.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.rTopRight{
+    width: 45%;
+    height: 100%;
+    background-image: url('orange2.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Responsiveness */
+
+@media(max-width: 500px){
+    .main{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    #textCenter{
+        margin-top: 1rem;
+    }
+
+    .right{
+        width: 100%;
+    }
+}
